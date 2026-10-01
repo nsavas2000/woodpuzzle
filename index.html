@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#7b5cc4">
+  <title>Ahşap Puzzle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+    
+        <h1>
+            <span>A</span><span>n</span><span>k</span><span>a</span><span>r</span><span>a</span>
+            <span>R</span><span>o</span><span>b</span><span>o</span><span>t</span><span>i</span><span>k</span>
+            <span>A</span><span>h</span><span>ş</span><span>a</span><span>p</span>
+            <span>P</span><span>u</span><span>z</span><span>z</span><span>l</span><span>e</span>
+        </h1>    
+        </header>
+
+    <section class="frame">
+      <div id="stage">
+        <div class="hud">
+          <span class="star">⭐</span>
+          <span id="count">Yükleniyor...</span>
+          <div class="bar"><i id="bar"></i></div>
+        </div>
+        <div id="toast">Harika! Modeli tamamladın! 🎉</div>
+      </div>
+    </section>
+
+    <p id="hint">Pembe parçayı yerine sürükle • Modeli çevirmek için boşluğa sürükle</p>
+  </main>
+
+  <div id="rotate" role="alert">
+    <div class="phone"></div>
+    <p>Lütfen telefonunu yatay çevir</p>
+    <small>Oyun yatay modda oynanır</small>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
